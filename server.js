@@ -5,7 +5,11 @@ import bodyParser from "body-parser";
 import { menu } from "./models/Menu.js";
 import Personrouter from "./routes/personRoutes.js"; 
 import menuRouter from "./routes/menuRoutes.js";
+import dotenv from 'dotenv';
 
+dotenv.config({
+    path: './env'
+})
 const app = express();
 app.use(bodyParser.json()) //req.body
 

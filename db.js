@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
 
 //define the mongodb connection URL 
-const mongodbURL = "mongodb://127.0.0.1:27017/hotels"
+// const mongodbURL = "mongodb://127.0.0.1:27017/hotels"
+const mongodbURL = process.env.MONGODB_URL
 
 //Set up mongodb connection
 
