@@ -7,6 +7,8 @@ import dotenv from 'dotenv';
 dotenv.config({
     path: './env'
 })
+const port = process.env.PORT || 3000;
+
 const app = express();
 app.use(bodyParser.json()) //req.body
 
@@ -21,7 +23,7 @@ app.use("/person",Personrouter)
 app.use("/menu", menuRouter)
 
 
-app.listen(3000, () => {
-    console.log("servr is running")
+app.listen(port, () => {
+    console.log("server is running")
 });
 
