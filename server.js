@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import Personrouter from "./routes/personRoutes.js"; 
 import menuRouter from "./routes/menuRoutes.js";
+import db from "./db.js";
 import dotenv from 'dotenv';
 
 dotenv.config({
