@@ -1,8 +1,5 @@
 import express from "express";
-import db from "./db.js";
-import { person } from "./models/person.js";
 import bodyParser from "body-parser";
-import { menu } from "./models/Menu.js";
 import Personrouter from "./routes/personRoutes.js"; 
 import menuRouter from "./routes/menuRoutes.js";
 import dotenv from 'dotenv';
